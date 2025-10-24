@@ -2,7 +2,7 @@
 #include <thread>
 #include <mutex>
 #include <atomic>
-
+#include "thread_safe_queue.h"
 
 struct RaceState {
     // movement and finish
