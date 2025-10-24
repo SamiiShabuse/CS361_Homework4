@@ -6,7 +6,7 @@ int main (int argc, char** argv) {
         std::cerr << "usage: " << argv[0] << " <number>\n";
         return -1;
     }
-    
+
     // Check to make sure the argument is a number greater than 0
     try {
         int number = std::stoi(argv[1]);
@@ -21,5 +21,12 @@ int main (int argc, char** argv) {
         std::cerr << "Error: " << argv[1] << " is out of range.\n";
         return -1;
     }
+
+    // Starting race intro
+    std::printf("Starting race with %s participants!\n", argv[1]);
+
+    // TODO: insert function I will be calling here later
+
+    return 0;
 
 }
