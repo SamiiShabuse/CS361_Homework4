@@ -43,9 +43,6 @@ struct RaceState {
     // threadsafe dice queue
     ThreadSafeQueue<int> dice;  // queue of dice rolls
 
-    // For completion tracking
-    std::mutex completion_mtx;         // mutex for synchronizing access to completion tracking data
-
     // For I/O synchronization
     std::mutex io_mtx;                 // mutex for synchronizing access to shared data
 
