@@ -78,10 +78,10 @@ int main (int argc, char** argv) {
     S.dice.notify_all();
     gm.join();
 
-    // Print final rankings (finish_order stores racer indices in finishing order)
+    // Print final rankings (finish_order stores thread ids in finishing order)
     for (size_t i = 0; i < S.finish_order.size(); ++i) {
-        int racer_idx = S.finish_order[i];
-        std::cout << (i + 1) << " : Racer " << racer_idx << "\n";
+        std::thread::id tid = S.finish_order[i];
+        std::cout << (i + 1) << " : " << tid_to_str(tid) << "\n";
     }
 
     return 0;

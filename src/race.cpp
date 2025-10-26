@@ -105,8 +105,8 @@ void racer(RaceState& S, int index) {
         if (!S.finished[index]) {
           S.finished[index] = true;
           ++S.finished_count;
-          // record the racer index in finish order
-          S.finish_order.push_back(index);
+          // record the finishing thread id in finish order
+          S.finish_order.push_back(std::this_thread::get_id());
           announce = true;
           if (S.finished_count == S.total_racers) {
             S.all_finished.store(true);

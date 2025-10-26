@@ -32,7 +32,7 @@ struct RaceState {
     // movement and finish per racer
     std::vector<int> distance;          // size r, per racer distance
     std::vector<bool> finished;         // size r
-    std::vector<int> finish_order;      // order of finishing: store racer indices in finish order
+    std::vector<std::thread::id> finish_order; // order of finishing: store thread ids in finish order
 
 
     // completion tracking
