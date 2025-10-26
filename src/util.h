@@ -10,7 +10,6 @@
  * 
  * This file contains utility functions and structures for the racing simulation.
  */
-
 #include <random>
 #include <thread>
 #include <sstream>

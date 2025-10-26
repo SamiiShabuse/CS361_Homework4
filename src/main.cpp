@@ -11,8 +11,6 @@
  * This file contains the main function that initializes the race simulation. It processes command-line arguments to determine the number of racers,
  * spawns racer threads and a game master thread, and manages their execution. After all racers have finished, it prints the final rankings of the race.
  */
-
-
 #include <iostream>
 #include <vector>
 #include <thread>

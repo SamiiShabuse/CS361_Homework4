@@ -11,7 +11,6 @@
  * This file contains the definition of a thread-safe queue class that supports blocking pop operations. 
  * It uses mutexes and condition variables to ensure safe concurrent access. 
  */
-
 #pragma once
 #include <condition_variable>
 #include <mutex>

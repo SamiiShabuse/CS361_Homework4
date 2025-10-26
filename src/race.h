@@ -10,7 +10,6 @@
  * 
  * This file contains the definition of the RaceState structure and declarations of the game master and racer thread functions.
  */
-
 #include <vector>
 #include <thread>
 #include <mutex>

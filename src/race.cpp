@@ -10,7 +10,6 @@
  * 
  * This file contains the implementation of the game master and racer thread functions.
  */
-
 #include <iostream>
 #include "race.h"
 #include "util.h"
